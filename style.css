@@ -2,41 +2,34 @@ body {
     background-color: rgb(54, 57, 66);
 }
 
-.pigpic {
+.ppic {
     border-radius: 50%;
     width: 50px;
 }
 
-.tag {
+.tag, .discord, .steam, .twitter {
 display: flex;
 }
 
 .discord-tag, .tag{
     color: rgb(255, 255, 255);
-    width: 320px;
+    width: 270px;
     padding: 7px;
     margin: 0;
     background-color: rgb(42, 43, 47)
+    
 }
 
-.discord-tag {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
-}
+.steam, .twitter, .discord{
+    width: 35px;
+} 
 
-a {
-    text-decoration: none;
-}
-
-a:visited {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a:active {
-    color: rgb(111, 111, 119);
-    background-color: transparent;
-    text-decoration: none;
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 270px;
+    padding: 7px;
+    margin: 0;
+    background-color: rgb(48, 49, 54)
 }
