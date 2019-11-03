@@ -1,0 +1,19 @@
+div, ul {
+    background-color: #fff;
+    font-size: 20px;
+    list-style: none;
+    /* padding: 0px; */
+    color: red;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.heading, .blue {
+    color: blue;
+}
+
+body {
+    background-color: #000;
+}
