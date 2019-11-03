@@ -1,25 +1,42 @@
 body {
-    background-color: #000;
+    background-color: rgb(54, 57, 66);
 }
 
-div, ul {
-    background-color: #fff;
-    font-size: 20px;
-    list-style: none;
-    /* padding: 0px; */
-    color: red;
-}
-
-.title {
-    font-size: 50px;
-}
-
-.heading, .blue {
-    color: purple;
-}
-
-
-.pepe {
+.pigpic {
+    border-radius: 50%;
     width: 50px;
-    height: 50px;
+}
+
+.tag {
+display: flex;
+}
+
+.discord-tag, .tag{
+    color: rgb(255, 255, 255);
+    width: 320px;
+    padding: 7px;
+    margin: 0;
+    background-color: rgb(42, 43, 47)
+}
+
+.discord-tag {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: rgb(111, 111, 119);
+    background-color: transparent;
+    text-decoration: none;
 }
