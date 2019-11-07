@@ -7,13 +7,12 @@ body {
     width: 50px;
 }
 
-.tag, .discord, .steam, .twitter {
+.top, .discord, .steam, .twitter {
 display: flex;
 }
 
-.discord-tag, .tag{
-    color: rgb(255, 255, 255);
-    width: 270px;
+.discord-tag, .top{
+    color: white;
     padding: 7px;
     margin: 0;
     background-color: rgb(42, 43, 47)
@@ -23,13 +22,3 @@ display: flex;
 .steam, .twitter, .discord{
     width: 35px;
 } 
-
-.socials {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 270px;
-    padding: 7px;
-    margin: 0;
-    background-color: rgb(48, 49, 54)
-}
