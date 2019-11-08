@@ -22,3 +22,7 @@ display: flex;
 .steam, .twitter, .discord{
     width: 35px;
 } 
+
+.text{
+    color: rgb(201, 198, 198);
+}
