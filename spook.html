@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Favicon -->
+    <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/spook/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/spook/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/spook/favicon-16x16.png">
@@ -20,22 +20,35 @@
         html {
             background-color: black;
         }
-        .ezpz {
+        .ezpz{
             margin-top: 250px;
             display: flex;
             justify-content: center;
             align-items: center;
-            animation: bounceAround 1.1s ease-in-out infinite;
+            animation: bounceAround 9s ease-in-out infinite;
+            animation-fill-mode: forwards;
         }
         @keyframes bounceAround {
             0% {transform:translateY(0);}
-            20% {transform:translateY(-60px) rotate(0deg);}
-            25%{transform:translateY(20px) rotate(0deg);}
-            35%, 55%{transform:translateY(0px) rotate(0deg);}
-            60% {transform: translateY(-20px) rotate(0deg);}
-            100%{transform: translateY(-20px) rotate(360deg);}
+            10% {transform:translateY(-60px);}
+            12.5% {transform:translateY(20px);}
+            17.5% {transform:translateY(0px);}
+            27.5% {transform: rotate(20deg);}
+            35% {transform: rotate(-20deg);}
+            50% {transform: rotate(360deg);}
+            60% {transform:translateY(-60px);}
+            62.5% {transform:translateY(20px);}
+            67.5% {transform:translateY(0px);}
+            77.5% {transform: rotate(-20deg);}
+            85% {transform: rotate(20deg);}
+            100% {transform: rotate(-360deg);}
         }
     </style>
+<style type="text/css">
+    body {
+        overflow: hidden;
+    }
+</style>
 </head>
 <body>
     <div class="ezpz">

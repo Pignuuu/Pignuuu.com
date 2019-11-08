@@ -26,3 +26,7 @@ display: flex;
 .text{
     color: rgb(201, 198, 198);
 }
+
+.ezpz{
+    animation-fill-mode: forwards;
+}
