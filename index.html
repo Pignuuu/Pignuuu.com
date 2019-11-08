@@ -18,6 +18,18 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+
+    <style> .ppic{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: bounceAround 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
+        @keyframes bounceAround {
+            100% {transform: rotate(360deg);}
+        }
+    </style>
 </head>
 <body>
     <div class="top">
@@ -38,7 +50,7 @@
         </a>
         </div>
     <div class="text">
-        <h1>
+        <h1 class="disclaimer">
              Disclaimer
         </h1>
         <h1>
