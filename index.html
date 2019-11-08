@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>*Work in progress*</title>
     <link rel="stylesheet" href="style.css">
-    
-    <!-- favicon -->
+
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
@@ -19,23 +19,35 @@
     <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-    <style> .ppic{
+    <style>
+        .ppic {
             display: flex;
             justify-content: center;
             align-items: center;
-            animation: bounceAround 15s ease-in-out infinite;
+            animation: rotate 5s infinite;
             animation-fill-mode: forwards;
         }
-        @keyframes bounceAround {
-            100% {transform: rotate(360deg);}
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(20deg);
+            }
+
+            50% {
+                transform: rotate(-20deg);
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="top">
-        <a href=https://penguinfoundation.org.au>
-            <img class="ppic" src="/img/Pig.png" alt="Pignuuu" > </a>
-        <h1 class="discord-tag">Pignuuu#3333</h1>  
+        <a href=https://penguinfoundation.org.au> <img class="ppic" src="/img/Pig.png" alt="Pignuuu"> </a>
+        <h1 class="discord-tag"><span class="name">Pignuuu</span>#<span class="discrim">3333</span></h1>
         <a href="https://twitter.com/Pignuuu">
             <img class="twitter" src="img/twitter.png" alt="Twitter">
         </a>
@@ -48,14 +60,20 @@
         <a href="https://github.com/Pignuuu">
             <img class="github" src="img/Github.png" alt="Github">
         </a>
-        </div>
-    <div class="text">
-        <h1 class="disclaimer">
-             Disclaimer
-        </h1>
-        <h1>
-            ¯\_(ツ)_/¯ *Website not done* ¯\_(ツ)_/¯
-        </h1>
     </div>
+    <div class="text">
+        <h2>
+            About me
+        </h2>
+        <h33>
+            My name is Stian I'm a student from Norway that makes Discord bots. I recently started with making websites.
+            I have been coding websites for <span class="dc"></span> days now.
+            I try to keep my personal life private because i am not social like normal people.
+            But I am very friendly so feel free to add me on social media.
+
+        </h33>
+    </div>
+    <script src="index.js"></script>
 </body>
+
 </html>
