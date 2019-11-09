@@ -1,29 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow&display=swap');
+
 html {
-    font-family: "Consolas", Times, serif;
+    font-family: 'Barlow', sans-serif;
+    background-repeat: no-repeat;
+    background-image: url("img/background/Background1380x969Version3.png");
+    background-color: rgb(72, 78, 84);
+    background-size: cover;
 }
 
-body {
-    background-color: rgb(54, 57, 66);
-}
 
-.ppic {
+.Pignuuu-profile-pic {
     border-radius: 50%;
     width: 50px;
 }
 
-.top,
-.discord,
-.steam,
-.twitter {
+
+.about {
+    color: rgb(201, 198, 198);
+    width: 525px;
+    margin: 2px;
     display: flex;
+    flex-direction: column;
 }
 
-.discord-tag,
-.top {
-    color: white;
-    padding: 7px;
-    margin: 0;
-    background-color: rgb(42, 43, 47)
+.about-child {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.aboutme {
+    margin-left: 20px;
+    margin-right: 20px;
+
 }
 
 .steam,
@@ -33,19 +42,24 @@ body {
     width: 45px;
 }
 
-.text {
-    color: rgb(201, 198, 198);
-    background-color: rgb(65, 68, 77);
-    border-radius: 4%;
-    width: 500px;
-    margin: 2px;
+@media only screen and (max-width: 1440px) {
+
+    /* For mobile phones: */
+    html {
+        background-image: url("img/background/Background1440x3040.png");
+    }
 }
 
-.discrim,
-.dc {
-    color: rgb(255, 126, 38);
-}
-
-.name {
-    color: rgb(112, 146, 191);
-}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
