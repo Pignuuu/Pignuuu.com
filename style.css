@@ -15,7 +15,7 @@ html {
 }
 
 
-.pignuuu {
+.about {
     color: rgb(201, 198, 198);
     width: 525px;
     margin: 2px;
@@ -23,7 +23,7 @@ html {
     flex-direction: column;
 }
 
-.pignuuu-child {
+.about-child {
     display: flex;
     align-items: center;
     padding-left: 20px;
