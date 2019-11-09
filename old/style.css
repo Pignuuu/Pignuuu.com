@@ -1,0 +1,51 @@
+html {
+    font-family: "Consolas", Times, serif;
+}
+
+body {
+    background-color: rgb(54, 57, 66);
+}
+
+.ppic {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.top,
+.discord,
+.steam,
+.twitter {
+    display: flex;
+}
+
+.discord-tag,
+.top {
+    color: white;
+    padding: 7px;
+    margin: 0;
+    background-color: rgb(42, 43, 47)
+}
+
+.steam,
+.twitter,
+.discord,
+.github {
+    width: 45px;
+}
+
+.text {
+    color: rgb(201, 198, 198);
+    background-color: rgb(65, 68, 77);
+    border-radius: 4%;
+    width: 500px;
+    margin: 2px;
+}
+
+.discrim,
+.dc {
+    color: rgb(255, 126, 38);
+}
+
+.name {
+    color: rgb(112, 146, 191);
+}
