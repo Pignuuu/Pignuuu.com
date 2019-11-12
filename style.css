@@ -14,7 +14,6 @@ html {
     width: 60px;
 }
 
-
 .top {
     color: rgb(201, 198, 198);
     width: 525px;
@@ -42,10 +41,86 @@ html {
     width: 45px;
 }
 
-@media only screen and (max-width: 1440px) {
+.about {
+    color: rgb(201, 198, 198);
+    /* background-color: rgb(64, 69, 73); */
+    width: 525px;
+}
 
-    /* For mobile phones: */
-    html {
-        background-image: url("img/background/Background1440x3040.png");
+.open, .close{
+    /* Buttons */
+    margin: 10px;
+    width: 40px;
+}
+
+/* Right side panel */
+
+html,
+body {
+    overflow: hidden;
+    max-width: 100%
+}
+
+.notification-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    display: none;
+    height: 100%;
+    overflow: hidden;
+    background: #292E31;
+    z-index: 999;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+}
+
+.selected {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+}
+
+.dismiss {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-in {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes slide-in {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@-webkit-keyframes slide-out {
+    0% {
+        -webkit-transform: translateX(0%);
+    }
+
+    100% {
+        -webkit-transform: translateX(100%);
     }
 }

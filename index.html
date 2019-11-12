@@ -22,6 +22,7 @@
 </head>
 
 <body>
+    <!-- Top bar -->
     <div class="top">
         <h2 class="pignuuu-child">
             <a href=https://penguinfoundation.org.au> <img class="Pignuuu-profile-pic" src="/img/Pig.png"
@@ -36,12 +37,54 @@
             <a href="https://github.com/Pignuuu">
                 <img class="github" src="img/Github.png" alt="Github"></a>
         </h2>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <div class="notification-container dismiss">
+    </div>
+
+    <div class="about">
         <h33>
             My name is Stian I'm a student from Norway that makes Discord bots for fun. I recently started making
             websites
             and I have been coding websites for <span class="dc"></span> days now.
         </h33>
     </div>
+
+    <!-- Buttons -->
+    <a id="showFilePanel"><svg class="open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path
+                d="M0 10a10 10 0 1 1 20 0 10 10 0 0 1-20 0zm2 0a8 8 0 1 0 16 0 8 8 0 0 0-16 0zm8-2h5v4h-5v3l-5-5 5-5v3z" />
+            </svg></a>
+    <a id="closeFilePanel"><svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path
+                d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z" />
+            </svg></a>
+
+    <script>
+        $('#showFilePanel').click(function (event) {
+            if ($('.notification-container').hasClass('dismiss')) {
+                $('.notification-container').removeClass('dismiss').addClass('selected').show();
+            }
+            event.preventDefault();
+        });
+
+        $('#closeFilePanel').click(function (event) {
+            if ($('.notification-container').hasClass('selected')) {
+                $('.notification-container').removeClass('selected').addClass('dismiss');
+            }
+            event.preventDefault();
+        });
+    </script>
+
+    <script>
+        $("#add_to_quote").click(function () {
+            $("#gform_submit_button_1").click();
+        });
+    </script>
+
     <script src="/index.js"></script>
 
 </body>
