@@ -87,12 +87,27 @@ html {
     width: 525px;
 }
 
+.open:hover {
+    width: 42px;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    margin-right: 8px;
+    margin-bottom: 0px;
+}
+
+.close:hover {
+    width: 42px;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    margin-bottom: 0px;
+}
 .open,
 .close {
     /* Buttons */
     margin-right: 10px;
     margin-top: 5px;
     width: 40px;
+    margin-bottom: 2px;
 }
 
 /* Right side panel */
