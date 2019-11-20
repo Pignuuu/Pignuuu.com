@@ -71,11 +71,6 @@ html {
     margin-right: 1px;
 }
 
-.pignuuume:hover {
-    opacity: 0.65;
-    filter: alpha(opacity=65);
-}
-
 .Pignuuu-profile-pic:hover {
     opacity: 0.65;
     filter: alpha(opacity=65);
@@ -101,6 +96,7 @@ html {
     filter: alpha(opacity=65);
     margin-bottom: 0px;
 }
+
 .open,
 .close {
     /* Buttons */
