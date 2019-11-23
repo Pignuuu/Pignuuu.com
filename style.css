@@ -244,7 +244,7 @@ input:checked+.slider:before {
     }
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 435px) {
 
     /* For mobile phones: */
     .about {
