@@ -82,6 +82,10 @@ html {
     width: 525px;
 }
 
+.warning {
+    color: red
+}
+
 .open:hover {
     width: 42px;
     opacity: 0.65;
@@ -237,5 +241,13 @@ input:checked+.slider:before {
 
     100% {
         -webkit-transform: translateX(100%);
+    }
+}
+
+@media only screen and (min-width: 410px) {
+
+    /* For mobile phones: */
+    .about {
+        width: 375px;
     }
 }
