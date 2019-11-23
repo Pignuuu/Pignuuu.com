@@ -79,7 +79,7 @@ html {
 .about {
     color: rgb(201, 198, 198);
     /* background-color: rgb(64, 69, 73); */
-    width: 525px;
+    width: 550px;
 }
 
 .warning {
@@ -244,10 +244,10 @@ input:checked+.slider:before {
     }
 }
 
-@media only screen and (min-width: 410px) {
+@media only screen and (max-width: 390px) {
 
     /* For mobile phones: */
     .about {
-        width: 375px;
+        width: 350px;
     }
 }
