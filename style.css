@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Barlow&display=swap");
 
 html {
-    font-family: 'Barlow', sans-serif;
+    font-family: "Barlow", sans-serif;
     background-repeat: no-repeat;
     background-image: url("img/background/Background1380x969Version3.png");
     background-color: rgb(72, 78, 84);
     background-size: cover;
 }
-
 
 .Pignuuu-profile-pic {
     border-radius: 100%;
@@ -31,7 +30,6 @@ html {
 .pignuuume {
     margin-left: 20px;
     margin-right: 20px;
-
 }
 
 .steam-simple-icons,
@@ -40,62 +38,23 @@ html {
 .github-simple-icons {
     width: 45px;
     margin-right: 10px;
-}
-
-.github-simple-icons {
-    fill: #181717;
     opacity: 0.75;
-}
-
-.twitter-simple-icons {
-    fill: #1DA1F2;
-    opacity: 0.75;
-}
-
-.steam-simple-icons {
-    opacity: 0.75;
-}
-
-.discord-simple-icons {
-    fill: #7289DA;
-    opacity: 0.75;
+    transition: transform 0.3s ease-out, opacity 0.3s;
 }
 
 /* Hover */
 
+.steam-simple-icons:hover,
+.discord-simple-icons:hover,
+.twitter-simple-icons:hover,
 .github-simple-icons:hover {
-    width: 47px;
+    transform: scale(1.12);
     opacity: 1;
     filter: alpha(opacity=65);
-}
-
-.discord-simple-icons:hover {
-    width: 47px;
-    opacity: 1;
-    filter: alpha(opacity=65);
-    margin-right: 8px;
-}
-
-.steam-simple-icons:hover {
-    width: 47px;
-    opacity: 1;
-    filter: alpha(opacity=65);
-    margin-right: 8px;
-}
-
-.twitter-simple-icons:hover {
-    width: 47px;
-    opacity: 1;
-    filter: alpha(opacity=65);
-    margin-right: 8px;
 }
 
 .about {
     color: rgb(201, 198, 198);
     font-size: 20px;
     margin-left: 30px;
-}
-
-.warning {
-    color: red
 }
