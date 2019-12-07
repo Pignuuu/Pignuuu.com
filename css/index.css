@@ -3,7 +3,7 @@
 html {
     font-family: "Barlow", sans-serif;
     background-repeat: no-repeat;
-    background-image: url("img/background/Background1380x969Version3.png");
+    background-image: url("/img/Background/Background1380x969Version3.png");
     background-color: rgb(72, 78, 84);
     background-size: cover;
 }
