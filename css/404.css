@@ -40,6 +40,10 @@ body {
     margin-right: 10px;
 }
 
+a {
+    color: #808B96;
+}
+
 .errorurl {
     color: #45B39D;
 }
