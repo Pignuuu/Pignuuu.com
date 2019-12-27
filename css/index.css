@@ -113,10 +113,6 @@ html {
         font-size: 10px;
     }
 
-    .Adjust2 {
-        font-size: 10px;
-    }
-
     .Adjust3 {
         font-size: 15px;
     }
@@ -127,10 +123,6 @@ html {
         font-size: 25px;
     }
 
-    .Adjust2 {
-        font-size: 30px;
-    }
-
     .Adjust3 {
         font-size: 20px;
     }
@@ -138,10 +130,6 @@ html {
 
 @media only screen and (min-width: 355px) {
     .Adjust1 {
-        font-size: 30px;
-    }
-
-    .Adjust2 {
         font-size: 30px;
     }
 
@@ -155,10 +143,6 @@ html {
         font-size: 35px;
     }
 
-    .Adjust2 {
-        font-size: 35px;
-    }
-
     .Adjust3 {
         font-size: 30px;
     }
@@ -166,10 +150,6 @@ html {
 
 @media only screen and (min-width: 495px) {
     .Adjust1 {
-        font-size: 40px;
-    }
-
-    .Adjust2 {
         font-size: 40px;
     }
 
@@ -182,18 +162,10 @@ html {
     .Adjust1 {
         font-size: 45px;
     }
-
-    .Adjust2 {
-        font-size: 45px;
-    }
 }
 
 @media only screen and (min-width: 610px) {
     .Adjust1 {
-        font-size: 50px;
-    }
-
-    .Adjust2 {
         font-size: 50px;
     }
 }
@@ -202,8 +174,23 @@ html {
     .Adjust1 {
         font-size: 55px;
     }
+}
 
-    .Adjust2 {
-        font-size: 55px;
-    }
+
+.discord {
+    color: #7289DA;
+}
+.twitter {
+    color: #1DA1F2;
+}
+.reddit {
+    color: #FF4500;
+}
+
+.github {
+    color: #551A8B;
+}
+
+.steam {
+    color: rgb(87, 87, 87);
 }
