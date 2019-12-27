@@ -32,6 +32,7 @@ html {
     margin-top: 5px;
     margin-left: 35px;
     font-size: 25px;
+    text-decoration: none;
 }
 
 .text {
@@ -94,6 +95,26 @@ html {
 
 .jump:hover {
     animation: jump .5s;
+}
+
+.discord {
+    color: #7289DA;
+}
+
+.twitter {
+    color: #1DA1F2;
+}
+
+.reddit {
+    color: #FF4500;
+}
+
+.github {
+    color: #551A8B;
+}
+
+.steam {
+    color: rgb(87, 87, 87);
 }
 
 
@@ -174,23 +195,4 @@ html {
     .Adjust1 {
         font-size: 55px;
     }
-}
-
-
-.discord {
-    color: #7289DA;
-}
-.twitter {
-    color: #1DA1F2;
-}
-.reddit {
-    color: #FF4500;
-}
-
-.github {
-    color: #551A8B;
-}
-
-.steam {
-    color: rgb(87, 87, 87);
 }
