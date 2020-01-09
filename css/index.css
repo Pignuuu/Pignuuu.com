@@ -91,10 +91,6 @@ html {
     display: inline-block;
 }
 
-.jump:hover {
-    animation: jump .5s;
-}
-
 .discord {
     color: #7289DA;
 }
@@ -115,6 +111,9 @@ html {
     color: rgb(87, 87, 87);
 }
 
+.jump:hover {
+    animation: jump .5s;
+}
 
 @keyframes jump {
     0% {
