@@ -53,6 +53,10 @@ html {
     font-size: 25px;
 }
 
+.programming-languages-child {
+    margin-top: 5px;
+}
+
 .socials-text {
     color: white;
     font-family: 'Noto Sans TC', sans-serif;
@@ -81,6 +85,10 @@ html {
 
 .under-line {
     text-decoration: underline;
+}
+
+.grey {
+    color: #4F4F4F;
 }
 
 .red {
