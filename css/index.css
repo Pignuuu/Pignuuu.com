@@ -83,6 +83,20 @@ html {
     -webkit-touch-callout: none;
 }
 
+.scroll-button {
+    fill: #111111;
+}
+
+.cow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dog {
+    align-self: center;
+}
+
 .under-line {
     text-decoration: underline;
 }
