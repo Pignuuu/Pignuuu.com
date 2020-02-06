@@ -55,6 +55,7 @@ html {
 
 .programming-languages-child {
     margin-top: 5px;
+    display: inline-block;
 }
 
 .socials-text {
@@ -84,7 +85,7 @@ html {
 }
 
 .scroll-button {
-    fill: #111111;
+    fill: #4F4F4F;
 }
 
 .cow {
@@ -135,6 +136,10 @@ html {
 
 .jump:hover {
     animation: jump .5s;
+}
+
+.hover-color:hover {
+    color: #FB6363;
 }
 
 @keyframes jump {
