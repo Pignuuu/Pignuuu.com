@@ -102,6 +102,10 @@ html {
     text-decoration: underline;
 }
 
+.under-line-remove {
+    text-decoration: none;
+}
+
 .grey {
     color: #4F4F4F;
 }
@@ -112,6 +116,10 @@ html {
 
 .jump {
     display: inline-block;
+}
+
+.white {
+    color: #FEFEFE;
 }
 
 .discord {
