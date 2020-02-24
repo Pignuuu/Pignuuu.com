@@ -30,7 +30,7 @@ a:link {
 }
 
 .icon-padding-left {
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 .padding-top-7px {
@@ -69,6 +69,7 @@ a:link {
 .toolbar-img {
     height: 29px;
     padding-top: 1px;
+    padding-right: 3px;
 }
 
 .white-line {
