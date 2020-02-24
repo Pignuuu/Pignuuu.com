@@ -71,6 +71,15 @@ a:link {
     padding-top: 1px;
 }
 
+.white-line {
+    background-color: rgb(240, 240, 240);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    height: 37px;
+    width: 100%;
+  }
+
 .test {
    display: flex;
    justify-content: space-between;
