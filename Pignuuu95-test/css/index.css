@@ -85,3 +85,12 @@ a:link {
    display: flex;
    justify-content: space-between;
 }
+
+.error-message {
+    display: flex;
+    justify-content: center;
+}
+
+.error-message img {
+    width: 275px;
+}
