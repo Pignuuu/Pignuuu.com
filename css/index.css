@@ -1,82 +1,9 @@
-section {
-    height: 100vh;
-}
-
-ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
 html {
-    background-color: #25262A;
-    scroll-behavior: smooth;
+    background-color: #018182;
     overflow-y: hidden;
     overflow-x: hidden;
-}
-
-.top-bar {
-    background-color: #181818;
-    padding-top: 2.5px;
-    padding-bottom: 8px;
-}
-
-.top-bar-text {
-    display: inline-block;
-    font-family: 'Bitter', serif;
-    color: #4F4F4F;
-    margin: 0;
-    margin-top: 5px;
-    margin-left: 35px;
-    font-size: 25px;
-    text-decoration: none;
-}
-
-.text {
-    margin: 0;
-    margin-top: 7px;
-}
-
-.about-text {
-    margin: 0;
-    margin-right: 20px;
-    margin-top: 10px;
-}
-
-.introduction {
-    color: white;
-    font-family: 'Noto Sans TC', sans-serif;
-    margin: 0;
-    margin-top: 75px;
-    margin-left: 35px;
-    font-size: 25px;
-}
-
-.programming-languages-child {
-    margin-top: 5px;
-    display: inline-block;
-}
-
-.socials-text {
-    color: white;
-    font-family: 'Noto Sans TC', sans-serif;
-    margin: 0;
-    margin-left: 35px;
-    margin-top: 20px;
-    margin-right: 20px;
-    font-size: 25px;
-}
-
-.ontop-socials-text {
-    color: white;
-    font-family: 'Noto Sans TC', sans-serif;
-    margin: 0;
-    margin-top: 75px;
-    font-size: 25px;
-}
-
-.disable-selection {
     -moz-user-select: none;
     -ms-user-select: none;
     -khtml-user-select: none;
@@ -84,79 +11,86 @@ html {
     -webkit-touch-callout: none;
 }
 
-.scroll-button {
-    fill: #4F4F4F;
+h3 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8px;
 }
 
-.cow {
+section {
+    height: 99vh;
+}
+
+a:link {
+    text-decoration: none;
+  } 
+
+.icon-text-white {
+    color: rgb(190, 190, 190);
+    font-weight: 1;
+}
+
+.icon-padding-left {
+    padding-left: 15px;
+}
+
+.padding-top-7px {
+    padding-top: 7px;
+}
+
+.padding-top-20px {
+    padding-top: 20px;
+}
+
+.icon-div {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    width: 72px;
+    justify-content: center;
+    align-items: center;
 }
 
-.dog {
-    align-self: center;
+.icon-div img {
+    width: 32px;
 }
 
-.under-line {
-    text-decoration: underline;
+.icon-div h3 {
+    justify-content: center;
 }
 
-.under-line-remove {
-    text-decoration: none;
+.toolbar {
+    background-color: #C0C0C0;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    height: 35px;
+    width: 100%;
+  }
+
+.toolbar-img {
+    height: 29px;
+    padding-top: 1px;
+    padding-right: 3px;
 }
 
-.grey {
-    color: #4F4F4F;
+.white-line {
+    background-color: rgb(240, 240, 240);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    height: 37px;
+    width: 100%;
+  }
+
+.test {
+   display: flex;
+   justify-content: space-between;
 }
 
-.red {
-    color: #FB6363;
+.error-message {
+    display: flex;
+    justify-content: center;
 }
 
-.jump {
-    display: inline-block;
-}
-
-.white {
-    color: #FEFEFE;
-}
-
-.discord {
-    color: #7289DA;
-}
-
-.twitter {
-    color: #1DA1F2;
-}
-
-.reddit {
-    color: #FF4500;
-}
-
-.github {
-    color: #551A8B;
-}
-
-.steam {
-    color: rgb(87, 87, 87);
-}
-
-.jump:hover {
-    animation: jump .5s;
-}
-
-.hover-color:hover {
-    color: #FB6363;
-}
-
-@keyframes jump {
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-7.5px);
-    }
-
+.error-message img {
+    width: 275px;
 }
