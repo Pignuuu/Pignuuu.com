@@ -21,6 +21,12 @@ h3 {
 .padding-top-10px {
     padding-top: 10px;
 }
+.padding-top-7px {
+    padding-top: 7px;
+}
+.padding-top-5px {
+    padding-top: 5px;
+}
 
 a {
     color: rgb(163, 163, 163);
