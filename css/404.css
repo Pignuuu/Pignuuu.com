@@ -1,0 +1,27 @@
+html {
+    background-color: #0200AC;
+    line-height: 25px;
+}
+
+h3 {
+    color: rgb(163, 163, 163);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    padding-left: 45px;
+    width: 760px;
+}
+
+.padding-top-30px {
+    padding-top: 30px;
+}
+
+.padding-top-20px {
+    padding-top: 20px;
+}
+.padding-top-10px {
+    padding-top: 10px;
+}
+
+a {
+    color: rgb(163, 163, 163);
+}
