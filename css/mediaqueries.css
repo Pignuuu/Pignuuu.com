@@ -1,0 +1,87 @@
+@media only screen and (min-width: 0px) {
+    .error-text {
+        width: 290px;
+        font-size: 7px;
+    }
+    .padding-top {
+        padding-top: 3px;
+    }
+}
+@media only screen and (min-width: 380px) {
+    .error-text {
+        width: 310px;
+        font-size: 7px;
+    }
+    .padding-top {
+        padding-top: 5px;
+    }
+}
+@media only screen and (min-width: 420px) {
+    .error-text {
+        width: 345px;
+        font-size: 8px;
+    }
+    .padding-top {
+        padding-top: 6px;
+    }
+}
+@media only screen and (min-width: 460px) {
+    .error-text {
+        width: 370px;
+        font-size: 9px;
+    }
+    .padding-top {
+        padding-top: 9px;
+    }
+}
+@media only screen and (min-width: 500px) {
+    .error-text {
+        width: 410px;
+    }
+    .padding-top {
+        padding-top: 10px;
+    }
+}
+@media only screen and (min-width: 550px) {
+    .error-text {
+        width: 475px;
+    }
+    .padding-top {
+        padding-top: 11px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .error-text {
+        width: 550px;
+    }
+}
+@media only screen and (min-width: 650px) {
+    .error-text {
+        width: 580px;
+        font-size: 10px;
+    }
+}
+@media only screen and (min-width: 700px) {
+    .error-text {
+        width: 630px;
+        font-size: 10px;
+    }
+}
+@media only screen and (min-width: 760px) {
+    .error-text {
+        width: 690px;
+        font-size: 10px;
+    }
+}
+@media only screen and (min-width: 840px) {
+    .error-text {
+        width: 750px;
+        font-size: 10px;
+    }
+}
+@media only screen and (min-width: 875px) {
+    .error-text {
+        width: 790px;
+        font-size: 10px;
+    }
+}
