@@ -79,16 +79,16 @@ a:link {
     width: 100%;
   }
 
-.test {
+.toolbar-flex {
    display: flex;
    justify-content: space-between;
 }
 
-.error-message {
+/* .error-message {
     display: flex;
     justify-content: center;
-}
+} */
 
-.error-message img {
+/* .error-message img {
     width: 275px;
-}
+} */

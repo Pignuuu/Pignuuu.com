@@ -1,0 +1,171 @@
+html {
+    background-color: #E8E8E8;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+/* Notepad */
+
+.left-bar-notepad-grey-line {
+    background-color: #C5C5C5;
+    left: 5px;
+    width: 8px;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+
+.left-bar-notepad-grey-line2 {
+    background-color: #020080;
+    left: 5px;
+    width: 8px;
+    height: 35px;
+    position: fixed;
+    overflow: hidden;
+}
+
+.left-bar-notepad-grey-line3 {
+    background-color: #E6E6E8;
+    left: 5px;
+    width: 8px;
+    height: 5px;
+    position: fixed;
+    overflow: hidden;
+}
+
+.right-bar-notepad-grey-line {
+    background-color: #C5C5C5;
+    right: 0;
+    width: 8px;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+
+.right-bar-notepad-grey-line2 {
+    background-color: #020080;
+    right: 0;
+    width: 8px;
+    height: 35px;
+    position: fixed;
+    overflow: hidden;
+}
+
+.right-bar-notepad-grey-line3 {
+    background-color: #E6E6E8;
+    right: 0;
+    width: 8px;
+    height: 5px;
+    position: fixed;
+    overflow: hidden;
+}
+
+.top-bar-notepad-white-line {
+    background-color: #E6E6E8;
+    top: 0;
+    width: 100%;
+    height: 5px;
+    position: fixed;
+    overflow: hidden;
+}
+
+.left-bar-notepad-white-line {
+    background-color: #E6E6E8;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+
+
+.notepad-img {
+    height: 25px;
+    padding-top: 1px;
+    padding-left: 19px;
+}
+
+.x-img {
+    height: 50px;
+    padding-top: 4px;
+    right: 100%;
+}
+
+.top-bar-notepad {
+    background-color: #020080;
+    top: 5px;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+}
+
+.text {
+    font-size: 14px;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    padding-bottom: 200px;
+}
+
+.top-toolbar-notepad-grey {
+    background-color: #C5C5C5;
+    top: 35px;
+    width: 100%;
+    height: 35px;
+    position: fixed;
+}
+
+.underline {
+    text-decoration-line: underline;
+}
+
+.padding-left-10px {
+    padding-left: 10px;
+}
+
+/* Bottom tool bar */
+
+.toolbar {
+    background-color: #C0C0C0;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    height: 35px;
+    width: 100%;
+}
+
+.toolbar-img {
+    height: 29px;
+    padding-top: 1px;
+    padding-right: 3px;
+}
+
+.white-line {
+    background-color: rgb(240, 240, 240);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    height: 37px;
+    width: 100%;
+}
+
+.notepad-toolbar {
+    align-content: flex-start;
+}
+
+.padding-left-5px {
+    padding-left: 5px;
+}
+
+.toolbar-flex {
+    display: flex;
+    justify-content: space-between;   
+}
+
+/* * {
+    border: 1px solid red;
+} */
