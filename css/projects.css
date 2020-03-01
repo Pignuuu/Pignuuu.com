@@ -63,10 +63,6 @@ html {
     text-decoration-line: underline;
 }
 
-.padding-top-5px {
-    padding-top: 500px;
-}
-
 .padding-left-10px {
     padding-left: 10px;
 }
@@ -91,10 +87,6 @@ html {
 }
 
 /* Bottom tool bar */
-
-.purple {
-    color: purple;
-}
 
 .toolbar {
     background-color: #C0C0C0;
