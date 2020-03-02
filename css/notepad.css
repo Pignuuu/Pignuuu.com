@@ -73,6 +73,10 @@ html {
 
 /* text */
 
+.padding-top-35px {
+    padding-top: 35px;
+}
+
 .padding-top-75px {
     padding-top: 75px;
 }
