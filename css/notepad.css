@@ -42,18 +42,38 @@ html {
     top: 0;
     width: 100%;
     height: 30px;
-    position: fixed;
+    display: flex;
+}
+
+.object {
+    justify-content: space-between;
+}
+
+.x-button {
+    width: 27px;
+    height: 27px;
+    padding-top: 3px;
+    padding-right: 3px;
 }
 
 .text {
     font-size: 14px;
     font-family: 'Press Start 2P', cursive;
     color: white;
+    padding-top: 7px;
+
 }
 
 .top-toolbar-notepad-grey {
     background-color: #C5C5C5;
     top: 30px;
+    width: 100%;
+    height: 35px;
+    position: fixed;
+}
+.top-toolbar-notepad-black {
+    background-color: black;
+    top: 31px;
     width: 100%;
     height: 35px;
     position: fixed;
