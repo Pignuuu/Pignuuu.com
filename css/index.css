@@ -20,7 +20,7 @@ section {
 
 a:link {
     text-decoration: none;
-  }
+}
 
 .icon-text-white {
     color: rgb(190, 190, 190);
@@ -62,7 +62,7 @@ a:link {
     bottom: 0;
     height: 35px;
     width: 100%;
-  }
+}
 
 .toolbar-img {
     height: 29px;
@@ -77,9 +77,9 @@ a:link {
     bottom: 0;
     height: 37px;
     width: 100%;
-  }
+}
 
 .toolbar-flex {
-   display: flex;
-   justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
