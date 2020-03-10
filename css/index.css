@@ -48,11 +48,12 @@ a:link {
 }
 
 .icon-div img {
-    width: 32px;
+    width: 45px;
 }
 
 .icon-div h3 {
     justify-content: center;
+    font-size: 9px;
 }
 
 .toolbar {
