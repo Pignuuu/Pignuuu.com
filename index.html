@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/import.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pignuuu</title>
@@ -51,14 +52,25 @@
                     <h3>Email</h3>
                 </a>
             </div>
+            <div id="content" class="windows-button-panel"><img src="/img/Win-button-menu.png" alt=""></div>
         </div>
         <div class="white-line"></div>
         <div class="toolbar toolbar-flex">
-            <a href=""><img src="/img/Toolbar/Toolbar-start-menu.png" alt="toolbar menu button"></a><img
+            <span onclick="myFunction()"><img src="/img/Toolbar/Toolbar-start-menu.png" alt="toolbar menu button"></span><img
                 title="this does not show real time." class="toolbar-img" src="/img/Toolbar/clock.png"
                 alt="toolbar clock">
         </div>
     </section>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("content");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
 </body>
 
 </html>

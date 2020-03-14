@@ -22,6 +22,16 @@ a:link {
     text-decoration: none;
 }
 
+#content {
+    display: none;
+}
+
+#content img {
+    position: absolute;
+    bottom: 35px;
+    left: 5px;
+}
+
 .icon-text-white {
     color: rgb(190, 190, 190);
     font-weight: 1;
