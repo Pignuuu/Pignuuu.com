@@ -19,8 +19,9 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
+<body ondragstart="return false;" ondrop="return false;">
     <section>
+        <div class="invis" onclick="Closewinmenu()">
         <div class="icon-padding-left padding-top-20px ">
             <div style="display: flex;">
                 <a class="icon-div icon-text-white" href="/about">
@@ -54,20 +55,31 @@
             </div>
             <div id="content" class="windows-button-panel"><img src="/img/Win-button-menu.png" alt=""></div>
         </div>
-        <div class="white-line"></div>
+    </div>
+        <div onclick="Closewinmenu()"class="white-line"></div>
         <div class="toolbar toolbar-flex">
-            <span onclick="myFunction()"><img src="/img/Toolbar/Toolbar-start-menu.png" alt="toolbar menu button"></span><img
+            <span onclick="Winbutton()"><img src="/img/Toolbar/Toolbar-start-menu.png" alt="toolbar menu button"></span><img
                 title="this does not show real time." class="toolbar-img" src="/img/Toolbar/clock.png"
                 alt="toolbar clock">
         </div>
     </section>
     <script>
-        function myFunction() {
+        function Winbutton() {
           var x = document.getElementById("content");
           if (x.style.display === "block") {
             x.style.display = "none";
           } else {
             x.style.display = "block";
+          }
+        }
+        </script>
+        <script>
+            function Closewinmenu() {
+          var x = document.getElementById("content");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "none";
           }
         }
         </script>
