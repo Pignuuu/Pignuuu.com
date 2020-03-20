@@ -129,6 +129,34 @@ html {
     width: 100%;
 }
 
+.clock-img {
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+.clock-outside {
+    display: flex;
+    border-radius: 0px;
+    box-shadow: inset 1px 1px 1px #808080,
+        inset -1px -1px 2px white;
+    margin-left: 2px;
+    margin-right: 3px;
+    margin-top: 2px;
+    height: 29px;
+    width: 106px;
+}
+
+.clock-inside {
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 12px;
+    margin-left: 10px;
+    font-weight: lighter;
+    font-size: 8px;
+    font-weight: 100;
+    transform: scale(1, 2);
+}
 
 .toolbar-img {
     height: 29px;

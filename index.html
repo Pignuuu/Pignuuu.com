@@ -21,7 +21,7 @@
 
 <body ondragstart="return false;" ondrop="return false;">
     <section>
-        <div class="invis" onclick="Closewinmenu()">
+        <div class="invis" onclick="closeWinmenu()">
             <div class="icon-padding-left padding-top-20px ">
                 <div style="display: flex;">
                     <a class="icon-div icon-text-white" href="/about">
@@ -56,12 +56,10 @@
                 <div id="content" class="windows-button-panel"><img src="/img/Win-button-menu.png" alt=""></div>
             </div>
         </div>
-        <div onclick="Closewinmenu()" class="white-line"></div>
+        <div onclick="closeWinmenu()" class="white-line"></div>
         <div class="toolbar toolbar-flex">
-            <span onclick="Winbutton()"><img src="/img/Toolbar/Toolbar-start-menu.png"
-                    alt="toolbar menu button"></span>
-            <h3 class="test2"><img class="toolbar-img"
-                src="/img/Toolbar/clock.png" alt="toolbar clock"/></h3>
+            <span onclick="winButton()"><img src="/img/Toolbar/Toolbar-start-menu.png" alt="toolbar menu button"></span>
+            <span class="clock-outside"> <span class="clock-img-outside"> <img class="clock-img" src="/img/Toolbar/clock.png" alt="toolbar clock" /></span><h3 class="clock-inside"></h3></span>
         </div>
     </section>
     <script>
@@ -94,7 +92,7 @@
             return strTime;
         }
 
-        let currentTime = document.querySelector(".test2")
+        let currentTime = document.querySelector(".clock-inside")
 
         currentTime.innerHTML = formatTime(new Date)
 
