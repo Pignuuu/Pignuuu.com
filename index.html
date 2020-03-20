@@ -22,67 +22,86 @@
 <body ondragstart="return false;" ondrop="return false;">
     <section>
         <div class="invis" onclick="Closewinmenu()">
-        <div class="icon-padding-left padding-top-20px ">
-            <div style="display: flex;">
-                <a class="icon-div icon-text-white" href="/about">
-                    <img src="/img/icons/Notepad.png" alt="Pc icon">
-                    <h3>About</h3>
+            <div class="icon-padding-left padding-top-20px ">
+                <div style="display: flex;">
+                    <a class="icon-div icon-text-white" href="/about">
+                        <img src="/img/icons/Notepad.png" alt="Pc icon">
+                        <h3>About</h3>
+                    </a>
+                    <a style="padding-bottom: 8px;" class="icon-div icon-text-white padding-top-7px" href="/projects">
+                        <img src="/img/icons/Notepad.png" alt="Pc icon 2">
+                        <h3>Projects</h3>
+                    </a>
+                </div>
+                <div>
+                </div>
+                <a class="icon-div icon-text-white padding-top-7px" href="/uses">
+                    <img src="/img/icons/Notepad.png" alt="Folder icon">
+                    <h3>Uses</h3>
                 </a>
-                <a style="padding-bottom: 8px;" class="icon-div icon-text-white padding-top-7px" href="/projects">
-                    <img src="/img/icons/Notepad.png" alt="Pc icon 2">
-                    <h3>Projects</h3>
-                </a>
+                <div>
+                </div>
+                <div>
+                    <a class="icon-div icon-text-white padding-top-7px" href="/socials">
+                        <img src="img/icons/Notepad.png" alt="Rcycle bin">
+                        <h3>Socials</h3>
+                    </a>
+                </div>
+                <div>
+                    <a class="icon-div icon-text-white padding-top-7px" href="mailto: Pignuuu@gmail.com">
+                        <img src="img/icons/Mail-icon.png" title="Get in contact with me Pignuuu@gmail.com" alt="Email">
+                        <h3>Email</h3>
+                    </a>
+                </div>
+                <div id="content" class="windows-button-panel"><img src="/img/Win-button-menu.png" alt=""></div>
             </div>
-            <div>
-            </div>
-            <a class="icon-div icon-text-white padding-top-7px" href="/uses">
-                <img src="/img/icons/Notepad.png" alt="Folder icon">
-                <h3>Uses</h3>
-            </a>
-            <div>
-            </div>
-            <div>
-                <a class="icon-div icon-text-white padding-top-7px" href="/socials">
-                    <img src="img/icons/Notepad.png" alt="Rcycle bin">
-                    <h3>Socials</h3>
-                </a>
-            </div>
-            <div>
-                <a class="icon-div icon-text-white padding-top-7px" href="mailto: Pignuuu@gmail.com">
-                    <img src="img/icons/Mail-icon.png" title="Get in contact with me Pignuuu@gmail.com" alt="Email">
-                    <h3>Email</h3>
-                </a>
-            </div>
-            <div id="content" class="windows-button-panel"><img src="/img/Win-button-menu.png" alt=""></div>
         </div>
-    </div>
-        <div onclick="Closewinmenu()"class="white-line"></div>
+        <div onclick="Closewinmenu()" class="white-line"></div>
         <div class="toolbar toolbar-flex">
-            <span onclick="Winbutton()"><img src="/img/Toolbar/Toolbar-start-menu.png" alt="toolbar menu button"></span><img
-                title="this does not show real time." class="toolbar-img" src="/img/Toolbar/clock.png"
-                alt="toolbar clock">
+            <span onclick="Winbutton()"><img src="/img/Toolbar/Toolbar-start-menu.png"
+                    alt="toolbar menu button"></span>
+            <h3 class="test2"><img class="toolbar-img"
+                src="/img/Toolbar/clock.png" alt="toolbar clock"/></h3>
         </div>
     </section>
     <script>
-        function Winbutton() {
-          var x = document.getElementById("content");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
+        function winButton() {
+            var x = document.getElementById("content");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
         }
-        </script>
-        <script>
-            function Closewinmenu() {
-          var x = document.getElementById("content");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "none";
-          }
+
+        function closeWinmenu() {
+            var x = document.getElementById("content");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "none";
+            }
         }
-        </script>
+
+        function formatTime(date) {
+            let hours = date.getHours();
+            let minutes = date.getMinutes();
+            let ampm = hours >= 12 ? 'PM' : 'AM';
+            hours = hours % 12;
+            hours = hours ? hours : 12; // the hour '0' should be '12'
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            let strTime = hours + ':' + minutes + ' ' + ampm;
+            return strTime;
+        }
+
+        let currentTime = document.querySelector(".test2")
+
+        currentTime.innerHTML = formatTime(new Date)
+
+        setInterval(() => {
+            currentTime.innerHTML = formatTime(new Date)
+        }, 1000);
+    </script>
 </body>
 
 </html>
