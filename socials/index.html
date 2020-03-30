@@ -2,74 +2,91 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="/css/notepad.css">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/import.css">
-    <link rel="stylesheet" href="/css/mediaqueries about.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Socials</title>
+        <link rel="stylesheet" href="/css/notepad.css">
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/import.css">
+        <link rel="stylesheet" href="/css/mediaqueries about.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Socials</title>
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/Favicon2/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/Favicon2/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/Favicon2/favicon-16x16.png">
-    <link rel="manifest" href="/img/Favicon2/site.webmanifest">
-    <link rel="mask-icon" href="/img/Favicon2/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/Favicon2/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/Favicon2/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/Favicon2/favicon-16x16.png">
+        <link rel="manifest" href="/img/Favicon2/site.webmanifest">
+        <link rel="mask-icon" href="/img/Favicon2/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
 </head>
 
 <body ondragstart="return false;" ondrop="return false;">
-    <div class="top-toolbar-notepad-black"></div>
-    <div class="disable-selection top-bar-notepad object"> <span><img class="notepad-img" src="/img/icons/Notepad.png"
-                alt="Notepad icon"><span class="text"> Socials - Notepad</span></span><a href="/"><img class="x-button"
-                src="/img/icons/X.png" alt="X button"></a></div>
-    <div class="disable-selection top-toolbar-notepad-grey"><span class="padding-left-10px tool-bar-text"></span> <span
-            class="padding-left-10px underline">F</span>ile <span class="padding-left-10px underline">E</span>dit
-        <span class="padding-left-10px underline">S</span>earch <span class="padding-left-10px underline">H</span>elp
-    </div>
+        <div class="top-toolbar-notepad-black"></div>
+        <div class="disable-selection top-bar-notepad object"> <span><img class="notepad-img"
+                                src="/img/icons/Notepad.png" alt="Notepad icon"><span class="text"> Socials -
+                                Notepad</span></span><img onclick="closeWindow()" class="x-button" src="/img/icons/X.png"
+                        alt="X button"></a></div>
+        <div class="disable-selection top-toolbar-notepad-grey"><span class="padding-left-10px tool-bar-text"></span>
+                <span class="padding-left-10px underline">F</span>ile <span
+                        class="padding-left-10px underline">E</span>dit
+                <span class="padding-left-10px underline">S</span>earch <span
+                        class="padding-left-10px underline">H</span>elp
+        </div>
 
-    <div class="white-line"></div>
-    <h3 class="about-text padding-top-75px resize">Social Media</h3>
-    <h3 class="about-text resize padding-top-35px"><a class="black" target="_blank"
-            href="https://github.com/Pignuuu">Github</a></h3>
-    <h3 class="about-text resize"><a class="black" target="_blank"
-            href="https://discordapp.com/users/283331663482585088">Discord</a></h3>
-    <h3 class="about-text resize"><a class="black" target="_blank"
-            href="https://steamcommunity.com/id/Pignuuu">Steam</a></h3>
-    <h3 class="about-text resize"><a class="black" target="_blank" href="https://twitter.com/Pignuuu">Twitter</a></h3>
-    <h3 class="about-text resize"><a class="black" target="_blank" href="https://reddit.com/user/Pignuuu">Reddit</a>
-    </h3>
-    <div class="disable-selection toolbar toolbar-flex">
-        <span><a href="/index.html"><img src="/img/Toolbar/Toolbar-start-menu.png" alt="toolbar menu button"></a><img
-                class="padding-left-5px toolbar-img notepad-toolbar" src="/img/Toolbar/notepad-toolbar-socials.png"
-                alt=""></span><span class="clock-outside"> <span class="clock-img-outside"> <img class="clock-img" src="/img/Toolbar/clock.png" alt="toolbar clock" /></span><h3 class="clock-inside"></h3></span>
-    </div>
-    <script src="/js/index.js"></script>
-    <script>
-        function formatTime(date) {
-                let hours = date.getHours();
-                let minutes = date.getMinutes();
-                let ampm = hours >= 12 ? 'PM' : 'AM';
-                hours = hours % 12;
-                hours = hours ? hours : 12; // the hour '0' should be '12'
-                minutes = minutes < 10 ? '0' + minutes : minutes;
-                let strTime = hours + ':' + minutes + ' ' + ampm;
-                return strTime;
-        }
+        <div class="white-line"></div>
+        <h3 class="about-text padding-top-75px resize">Social Media</h3>
+        <h3 class="about-text resize padding-top-35px"><a class="black" target="_blank"
+                        href="https://github.com/Pignuuu">Github</a></h3>
+        <h3 class="about-text resize"><a class="black" target="_blank"
+                        href="https://discordapp.com/users/283331663482585088">Discord</a></h3>
+        <h3 class="about-text resize"><a class="black" target="_blank"
+                        href="https://steamcommunity.com/id/Pignuuu">Steam</a></h3>
+        <h3 class="about-text resize"><a class="black" target="_blank" href="https://twitter.com/Pignuuu">Twitter</a>
+        </h3>
+        <h3 class="about-text resize"><a class="black" target="_blank" href="https://reddit.com/user/Pignuuu">Reddit</a>
+        </h3>
+        <div class="disable-selection toolbar toolbar-flex">
+                <span><a href="/index.html"><img src="/img/Toolbar/Toolbar-start-menu.png"
+                                        alt="toolbar menu button"></a><img
+                                class="padding-left-5px toolbar-img notepad-toolbar"
+                                src="/img/Toolbar/notepad-toolbar-socials.png" alt=""></span><span
+                        class="clock-outside"> <span class="clock-img-outside"> <img class="clock-img"
+                                        src="/img/Toolbar/clock.png" alt="toolbar clock" /></span>
+                        <h3 class="clock-inside"></h3>
+                </span>
+        </div>
+        <script src="/js/index.js"></script>
+        <script>
+                function formatTime(date) {
+                        let hours = date.getHours();
+                        let minutes = date.getMinutes();
+                        let ampm = hours >= 12 ? 'PM' : 'AM';
+                        hours = hours % 12;
+                        hours = hours ? hours : 12; // the hour '0' should be '12'
+                        minutes = minutes < 10 ? '0' + minutes : minutes;
+                        let strTime = hours + ':' + minutes + ' ' + ampm;
+                        return strTime;
+                }
 
-        let currentTime = document.querySelector(".clock-inside")
+                let currentTime = document.querySelector(".clock-inside")
 
-        currentTime.innerHTML = formatTime(new Date)
-
-        setInterval(() => {
                 currentTime.innerHTML = formatTime(new Date)
-        }, 1000);
-</script>
-<script src="/js/console.image.min.js"></script>
-<script>console.image("https://pignuuu.com/img/bruh.gif");</script>
-<script>console.image("https://pignuuu.com/img/bruh1.gif");</script>
+
+                setInterval(() => {
+                        currentTime.innerHTML = formatTime(new Date)
+                }, 1000);
+
+                function closeWindow() {
+                        close();
+                }
+        </script>
+        <script src="/js/console.image.min.js"></script>
+        <script>
+                console.image("https://pignuuu.com/img/bruh.gif");
+        </script>
+        <script>
+                console.image("https://pignuuu.com/img/bruh1.gif");
+        </script>
 </body>
 
 </html>

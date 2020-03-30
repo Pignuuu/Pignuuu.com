@@ -67,7 +67,7 @@
                 <div>
                 </div>
                 <div>
-                    <a class="icon-div icon-text-white padding-top-7px" href="/socials">
+                    <a class="icon-div icon-text-white padding-top-7px" onclick="popUp()">
                         <img src="img/icons/Notepad.png" alt="Rcycle bin">
                         <h3>Socials</h3>
                     </a>
@@ -84,7 +84,10 @@
         <div onclick="closeWinmenu()" class="white-line"></div>
         <div class="toolbar toolbar-flex">
             <span onclick="winButton()"><img src="/img/Toolbar/Toolbar-start-menu.png" alt="toolbar menu button"></span>
-            <span class="clock-outside"> <span class="clock-img-outside"> <img class="clock-img" src="/img/Toolbar/clock.png" alt="toolbar clock" /></span><h3 class="clock-inside"></h3></span>
+            <span class="clock-outside"> <span class="clock-img-outside"> <img class="clock-img"
+                        src="/img/Toolbar/clock.png" alt="toolbar clock" /></span>
+                <h3 class="clock-inside"></h3>
+            </span>
         </div>
     </section>
     <script>
@@ -125,10 +128,18 @@
             currentTime.innerHTML = formatTime(new Date)
         }, 1000);
 
+        function popUp() {
+            popupWindow = window.open('/socials/index.html', 'Socials', 'width=700,height=450');
+            popupWindow.focus();
+        }
     </script>
     <script src="/js/console.image.min.js"></script>
-    <script>console.image("https://pignuuu.com/img/bruh.gif");</script>
-    <script>console.image("https://pignuuu.com/img/bruh1.gif");</script>
+    <script>
+        console.image("https://pignuuu.com/img/bruh.gif");
+    </script>
+    <script>
+        console.image("https://pignuuu.com/img/bruh1.gif");
+    </script>
 </body>
 
 </html>
