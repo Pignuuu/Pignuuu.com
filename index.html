@@ -85,7 +85,7 @@
         <div onclick="closeWinmenu()" class="white-line"></div>
         <div class="toolbar toolbar-flex">
             <span onclick="winButton()"><img src="/img/Toolbar/Toolbar-start-menu.png" alt="toolbar menu button"></span>
-            <span class="clock-outside"> <span class="clock-img-outside"> <img class="clock-img"
+            <span onclick="popUpBruh()" onclick="popUpBruh2()" class="clock-outside"> <span class="clock-img-outside">  <img class="clock-img"
                         src="/img/Toolbar/clock.png" alt="toolbar clock" /></span>
                 <h3 class="clock-inside"></h3>
             </span>
@@ -146,6 +146,11 @@
 
         function popUpProjects() {
             popupWindow = window.open('/projects', 'Projects', 'width=700,height=450');
+            popupWindow.focus();
+        }
+        function popUpBruh() {
+            console.log("test")
+            popupWindow = window.open('/img/roll.gif', 'Roll', 'width=250,height=204');
             popupWindow.focus();
         }
     </script>
