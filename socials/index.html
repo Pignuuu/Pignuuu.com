@@ -24,8 +24,8 @@
         <div class="top-toolbar-notepad-black"></div>
         <div class="disable-selection top-bar-notepad object"> <span><img class="notepad-img"
                                 src="/img/icons/Notepad.png" alt="Notepad icon"><span class="text"> Socials -
-                                Notepad</span></span><img onclick="closeWindow()" class="x-button" src="/img/icons/X.png"
-                        alt="X button"></a></div>
+                                Notepad</span></span><img onclick="closeWindow()" class="x-button"
+                        src="/img/icons/X.png" alt="X button"></a></div>
         <div class="disable-selection top-toolbar-notepad-grey"><span class="padding-left-10px tool-bar-text"></span>
                 <span class="padding-left-10px underline">F</span>ile <span
                         class="padding-left-10px underline">E</span>dit
@@ -56,37 +56,10 @@
                 </span>
         </div>
         <script src="/js/index.js"></script>
-        <script>
-                function formatTime(date) {
-                        let hours = date.getHours();
-                        let minutes = date.getMinutes();
-                        let ampm = hours >= 12 ? 'PM' : 'AM';
-                        hours = hours % 12;
-                        hours = hours ? hours : 12; // the hour '0' should be '12'
-                        minutes = minutes < 10 ? '0' + minutes : minutes;
-                        let strTime = hours + ':' + minutes + ' ' + ampm;
-                        return strTime;
-                }
-
-                let currentTime = document.querySelector(".clock-inside")
-
-                currentTime.innerHTML = formatTime(new Date)
-
-                setInterval(() => {
-                        currentTime.innerHTML = formatTime(new Date)
-                }, 1000);
-
-                function closeWindow() {
-                        close();
-                }
-        </script>
+        <script src="/js/closeWindow.js"></script>
+        <script src="/js/clock.js"></script>
         <script src="/js/console.image.min.js"></script>
-        <script>
-                console.image("https://pignuuu.com/img/bruh.gif");
-        </script>
-        <script>
-                console.image("https://pignuuu.com/img/bruh1.gif");
-        </script>
+        <script src="/js/consoleImage.js"></script>
 </body>
 
 </html>

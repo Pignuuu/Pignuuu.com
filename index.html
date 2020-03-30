@@ -49,25 +49,26 @@
         <div class="invis" onclick="closeWinmenu()">
             <div class="icon-padding-left padding-top-20px ">
                 <div style="display: flex;">
-                    <a class="icon-div icon-text-white" href="/about">
+                    <a class="icon-div icon-text-white" onclick="popUpAbout()">
                         <img src="/img/icons/Notepad.png" alt="Pc icon">
                         <h3>About</h3>
                     </a>
-                    <a style="padding-bottom: 8px;" class="icon-div icon-text-white padding-top-7px" href="/projects">
+                    <a style="padding-bottom: 8px;" class="icon-div icon-text-white padding-top-7px"
+                        onclick="popUpProjects()">
                         <img src="/img/icons/Notepad.png" alt="Pc icon 2">
                         <h3>Projects</h3>
                     </a>
                 </div>
                 <div>
                 </div>
-                <a class="icon-div icon-text-white padding-top-7px" href="/uses">
+                <a class="icon-div icon-text-white padding-top-7px" onclick="popUpUses()">
                     <img src="/img/icons/Notepad.png" alt="Folder icon">
                     <h3>Uses</h3>
                 </a>
                 <div>
                 </div>
                 <div>
-                    <a class="icon-div icon-text-white padding-top-7px" onclick="popUp()">
+                    <a class="icon-div icon-text-white padding-top-7px" onclick="popUpSocials()">
                         <img src="img/icons/Notepad.png" alt="Rcycle bin">
                         <h3>Socials</h3>
                     </a>
@@ -128,8 +129,23 @@
             currentTime.innerHTML = formatTime(new Date)
         }, 1000);
 
-        function popUp() {
-            popupWindow = window.open('/socials/index.html', 'Socials', 'width=700,height=450');
+        function popUpSocials() {
+            popupWindow = window.open('/socials', 'Socials', 'width=700,height=450');
+            popupWindow.focus();
+        }
+
+        function popUpAbout() {
+            popupWindow = window.open('/about', 'About', 'width=900,height=450');
+            popupWindow.focus();
+        }
+
+        function popUpUses() {
+            popupWindow = window.open('/uses', 'Uses', 'width=700,height=500');
+            popupWindow.focus();
+        }
+
+        function popUpProjects() {
+            popupWindow = window.open('/projects', 'Projects', 'width=700,height=450');
             popupWindow.focus();
         }
     </script>

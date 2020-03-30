@@ -23,8 +23,8 @@
 <body ondragstart="return false;" ondrop="return false;">
     <div class="top-toolbar-notepad-black"></div>
     <div class="disable-selection top-bar-notepad object"> <span><img class="notepad-img" src="/img/icons/Notepad.png"
-                alt="Notepad icon"><span class="text"> Livey - Notepad</span></span><a href="/"><img class="x-button"
-                src="/img/icons/X.png" alt="X button"></a></div>
+                alt="Notepad icon"><span class="text"> Livey - Notepad</span></span><img onclick="closeWindow()"
+            class="x-button" src="/img/icons/X.png" alt="X button"></div>
     <div class="disable-selection top-toolbar-notepad-grey"><span class="padding-left-10px tool-bar-text"></span> <span
             class="padding-left-10px underline">F</span>ile <span class="padding-left-10px underline">E</span>dit
         <span class="padding-left-10px underline">S</span>earch <span class="padding-left-10px underline">H</span>elp
@@ -43,7 +43,8 @@
     <h3 class="about-text resize">?Lyrics [Never gonna give you up]</h3>
     <h3 class="about-text resize">?OwO [To be or not to be, That is the question]</h3>
     <h3 class="about-text resize">?Changemymind [Something here]</h3>
-    <h3 class="about-text resize">?Tweet Pignuuu [Penguins are cool]</h3> <h3 class="about-text resize">?Meme</h3>
+    <h3 class="about-text resize">?Tweet Pignuuu [Penguins are cool]</h3>
+    <h3 class="about-text resize">?Meme</h3>
     <h3 class="about-text resize">?Tr</h3>
     <h3 class="about-text resize">?Art, ?space, ?Dog, ?Cat, ?Fox, ?Koala, ?Wolf, ?Bird, ?Duck</h3>
 
@@ -55,34 +56,10 @@
             <h3 class="clock-inside"></h3>
         </span>
     </div>
-    <script>
-        function formatTime(date) {
-            let hours = date.getHours();
-            let minutes = date.getMinutes();
-            let ampm = hours >= 12 ? 'PM' : 'AM';
-            hours = hours % 12;
-            hours = hours ? hours : 12; // the hour '0' should be '12'
-            minutes = minutes < 10 ? '0' + minutes : minutes;
-            let strTime = hours + ':' + minutes + ' ' + ampm;
-            return strTime;
-        }
-
-        let currentTime = document.querySelector(".clock-inside")
-
-        currentTime.innerHTML = formatTime(new Date)
-
-        setInterval(() => {
-            currentTime.innerHTML = formatTime(new Date)
-        }, 1000);
-    </script>
-    <script src="/js/index.js"></script>
+    <script src="/js/closeWindow.js"></script>
+    <script src="/js/clock.js"></script>
     <script src="/js/console.image.min.js"></script>
-    <script>
-        console.image("https://pignuuu.com/img/bruh.gif");
-    </script>
-    <script>
-        console.image("https://pignuuu.com/img/bruh1.gif");
-    </script>
+    <script src="/js/consoleImage.js"></script>
 </body>
 
 </html>
