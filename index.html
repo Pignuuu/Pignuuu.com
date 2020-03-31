@@ -1,166 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/import.css">
-    <link rel="stylesheet" href="css/mediaqueries.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pignuuu</title>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="img/Favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/Favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/Favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/Favicon/site.webmanifest">
-    <link rel="mask-icon" href="img/Favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Booting...</title>
+      <meta http-equiv="Refresh" content="12; url=https://pignuuu.com/Desktop" />
+      <link rel="stylesheet" href="css/boot.css">
 </head>
-<!--               ,888888b.                  
-                 .d888888888b                 
-            _..-'.`*'_,88888b                 
-          ,'..-..`"ad88888888b.               
-                 ``-. `*Y888888b.             
-                     \   `Y888888b.           
-                     :     Y8888888b.         
-                     :      Y88888888b.       
-                     |    _,8ad88888888.      
-                     : .d88888888888888b.     
-                     \d888888888888888888     
-                     8888;ss'`88888888888     
-                    888'N""N Y8888888888      
-                    `Y8 N  " :8888888888      
-                    |` N    '8888888888       
-                    |  N     8888888888       
-                    |  N     8888888888       
-                    |  N     8888888888       
-                    |  N    ,888888888P       
-                    :  N    ;888888888'       
-                    :  N    ;888888888'       
-                     \ N    d88888888'        
-                    _.>N    888888P'          
-                  <,--'N`.._>8888(            
-                   `>__N..--' `''`             -->
+<body>
 
-<body ondragstart="return false;" ondrop="return false;">
-    <section>
-        <div class="invis" onclick="closeWinmenu()">
-            <div class="icon-padding-left padding-top-20px ">
-                <div style="display: flex;">
-                    <a class="icon-div icon-text-white" onclick="popUpAbout()">
-                        <img src="/img/icons/Notepad.png" alt="Pc icon">
-                        <h3>About</h3>
-                    </a>
-                    <a style="padding-bottom: 8px;" class="icon-div icon-text-white padding-top-7px"
-                        onclick="popUpProjects()">
-                        <img src="/img/icons/Notepad.png" alt="Pc icon 2">
-                        <h3>Projects</h3>
-                    </a>
-                </div>
-                <div>
-                </div>
-                <a class="icon-div icon-text-white padding-top-7px" onclick="popUpUses()">
-                    <img src="/img/icons/Notepad.png" alt="Folder icon">
-                    <h3>Uses</h3>
-                </a>
-                <div>
-                </div>
-                <div>
-                    <a class="icon-div icon-text-white padding-top-7px" onclick="popUpSocials()">
-                        <img src="img/icons/Notepad.png" alt="Rcycle bin">
-                        <h3>Socials</h3>
-                    </a>
-                </div>
-                <div>
-                    <a class="icon-div icon-text-white padding-top-7px" href="mailto: Pignuuu@gmail.com">
-                        <img src="img/icons/Mail-icon.png" title="Get in contact with me Pignuuu@gmail.com" alt="Email">
-                        <h3>Email</h3>
-                    </a>
-                </div>
-                <div id="content" class="windows-button-panel"><img src="/img/Win-button-menu.png" alt=""></div>
-            </div>
-        </div>
-        <div onclick="closeWinmenu()" class="white-line"></div>
-        <div class="toolbar toolbar-flex">
-            <span onclick="winButton()"><img src="/img/Toolbar/Toolbar-start-menu.png" alt="toolbar menu button"></span>
-            <span onclick="popUpBruh()" onclick="popUpBruh2()" class="clock-outside"> <span class="clock-img-outside">  <img class="clock-img"
-                        src="/img/Toolbar/clock.png" alt="toolbar clock" /></span>
-                <h3 class="clock-inside"></h3>
-            </span>
-        </div>
-    </section>
-    <script>
-        function winButton() {
-            var x = document.getElementById("content");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-
-        function closeWinmenu() {
-            var x = document.getElementById("content");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "none";
-            }
-        }
-
-        function formatTime(date) {
-            let hours = date.getHours();
-            let minutes = date.getMinutes();
-            let ampm = hours >= 12 ? 'PM' : 'AM';
-            hours = hours % 12;
-            hours = hours ? hours : 12; // the hour '0' should be '12'
-            minutes = minutes < 10 ? '0' + minutes : minutes;
-            let strTime = hours + ':' + minutes + ' ' + ampm;
-            return strTime;
-        }
-
-        let currentTime = document.querySelector(".clock-inside")
-
-        currentTime.innerHTML = formatTime(new Date)
-
-        setInterval(() => {
-            currentTime.innerHTML = formatTime(new Date)
-        }, 1000);
-
-        function popUpSocials() {
-            popupWindow = window.open('/socials', 'Socials', 'width=700,height=450');
-            popupWindow.focus();
-        }
-
-        function popUpAbout() {
-            popupWindow = window.open('/about', 'About', 'width=900,height=450');
-            popupWindow.focus();
-        }
-
-        function popUpUses() {
-            popupWindow = window.open('/uses', 'Uses', 'width=700,height=500');
-            popupWindow.focus();
-        }
-
-        function popUpProjects() {
-            popupWindow = window.open('/projects', 'Projects', 'width=700,height=450');
-            popupWindow.focus();
-        }
-        function popUpBruh() {
-            console.log("test")
-            popupWindow = window.open('/img/roll.gif', 'Roll', 'width=250,height=204');
-            popupWindow.focus();
-        }
-    </script>
-    <script src="/js/console.image.min.js"></script>
-    <script>
-        console.image("https://pignuuu.com/img/bruh.gif");
-    </script>
-    <script>
-        console.image("https://pignuuu.com/img/bruh1.gif");
-    </script>
+<p style="padding-top: 20px;"class="line anim-typewriter">Booting from local disk...</p>
+<p style="padding-top: 20px;" class="line anim-typewriter2">Network boot from Pignuuu PIGNet3X</p>
+<p class="line anim-typewriter3">Copyright (C) 2020 - 2020 Pignuuu.com</p>
+<p class="line anim-typewriter4">Copyright (C) 2020 - 2020 Intel Corporation</p>
+<p style="padding-top: 20px;" class="line anim-typewriter5">PXE-EC8: !PXE Noot was not found in driver code segment.</p>
+<p class="line anim-typewriter6">PXE-EzPz Exiting intel PXE ROM.</p>
+<p style="padding-top: 20px;" class="line anim-typewriter7">Network boot from Pignuuu PIGNet3X</p>
+<p class="line anim-typewriter8">Copyright (C) 2020 - 2020 Pignuuu.com</p>
+<p class="line anim-typewriter9">Copyright (C) 2020 - 2020 Intel Corporation</p>
+<p style="padding-top: 20px;" class="line anim-typewriter10">PXE-EC8: !PXE Noot was not found in driver code segment.</p>
+<p class="line anim-typewriter11">PXE-EzPz Exiting intel PXE ROM.</p>
+<p style="padding-top: 40px;" style="padding-bottom: 40px;" class="line anim-typewriter12">Operating System found. Booting OS Pignuuu95</p>
+<p class="line anim-typewriter13">$$---$$-----------$$----------------------------------</p>
+<p class="line anim-typewriter14">$$---$$-----------$$----------------------------------</p>
+<p class="line anim-typewriter15">$$---$$--$$$$-----$$-----$$$$----$$$$---$$$$$$---$$$$-</p>
+<p class="line anim-typewriter16">$$-$-$$-$$--$$----$$----$$--$$--$$--$$--$$-$-$$-$$--$$</p>
+<p class="line anim-typewriter17">$$-$-$$-$$--$$----$$----$$------$$--$$--$$-$-$$-$$--$$</p>
+<p class="line anim-typewriter18">$$-$-$$-$$$$$$----$$----$$------$$--$$--$$-$-$$-$$$$$$</p>
+<p class="line anim-typewriter19">-$$-$$--$$--------$$----$$------$$--$$--$$-$-$$-$$----</p>
+<p class="line anim-typewriter20">-$$-$$--$$--------$$----$$--$$--$$--$$--$$-$-$$-$$----</p>
+<p class="line anim-typewriter21">-$$-$$---$$$$---$$$$$$---$$$$----$$$$---$$---$$--$$$$-</p>
 </body>
-
 </html>
