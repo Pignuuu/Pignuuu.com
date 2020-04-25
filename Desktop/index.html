@@ -50,36 +50,38 @@
             <div class="icon-padding-left padding-top-20px ">
                 <div style="display: flex;">
                     <a class="icon-div icon-text-white" onclick="popUpAbout()">
-                        <img src="/img/icons/Notepad.png" alt="Pc icon">
+                        <img src="/img/icons/Notepad.png" alt="Notepad icon">
                         <h3>About</h3>
                     </a>
                     <a style="padding-bottom: 8px;" class="icon-div icon-text-white padding-top-7px"
                         onclick="popUpProjects()">
-                        <img src="/img/icons/Notepad.png" alt="Pc icon 2">
+                        <img src="/img/icons/Notepad.png" alt="Notepad icon">
                         <h3>Projects</h3>
                     </a>
                 </div>
-                <div>
-                </div>
+                <div style="display: flex;">
                 <a class="icon-div icon-text-white padding-top-7px" onclick="popUpUses()">
-                    <img src="/img/icons/Notepad.png" alt="Folder icon">
+                    <img src="/img/icons/Notepad.png" alt="Notepad icon">
                     <h3>Uses</h3>
                 </a>
-                <div>
-                </div>
+                <a class="icon-div icon-text-white padding-top-7px" onclick="popUpDiscord()">
+                    <img src="/img/icons/Discord.png" alt="Discord icon">
+                    <h3>Discord</h3>
+                </a>
+            </div>
                 <div>
                     <a class="icon-div icon-text-white padding-top-7px" onclick="popUpSocials()">
-                        <img src="/img/icons/Notepad.png" alt="Rcycle bin">
+                        <img src="/img/icons/Notepad.png" alt="Notepad icon">
                         <h3>Socials</h3>
                     </a>
                 </div>
                 <div>
                     <a class="icon-div icon-text-white padding-top-7px" href="mailto: Pignuuu@gmail.com">
-                        <img src="/img/icons/Mail-icon.png" title="Get in contact with me Pignuuu@gmail.com" alt="Email">
+                        <img src="/img/icons/Mail-icon.png" title="Get in contact with me Pignuuu@gmail.com" alt="Email icon">
                         <h3>Email</h3>
                     </a>
                 </div>
-                <div id="content" class="windows-button-panel"><img src="/img/Win-button-menu.png" alt=""></div>
+                <div id="content" class="windows-button-panel"><img src="/img/Win-button-menu.png" alt="Windows button"></div>
             </div>
         </div>
         <div onclick="closeWinmenu()" class="white-line"></div>
@@ -141,6 +143,10 @@
 
         function popUpUses() {
             popupWindow = window.open('/uses', 'Uses', 'width=700,height=600');
+            popupWindow.focus();
+        }
+        function popUpDiscord() {
+            popupWindow = window.open('https://discord.gg/zyWEUbH', 'Discord', 'width=700,height=600');
             popupWindow.focus();
         }
 
