@@ -10,4 +10,4 @@ This website mainly used for custom redirect links custom Minecraft ip **(play.m
 * **CoreyFox** - *Helped with the Minecraft server IP*
 ## Acknowledgments
 * Inspired by [Microsoft](https://microsoft.com)
-* Copied Windows 95
+* Copied the Windows 95 desktop
