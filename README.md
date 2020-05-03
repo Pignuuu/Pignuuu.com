@@ -1,6 +1,6 @@
 # Pignuuu
 
-This website mainly used for custom redirect links custom Minecraft ip **(play.marvellian.com)** and serves as a landing page.
+This website mainly used as a landing page.
 
 ---
 
