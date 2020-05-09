@@ -10,6 +10,10 @@ body {
       background-color: #000
 }
 
+section{
+      width: 98%;
+}
+
 .line {
       overflow: hidden;transform: translateY(-50%);
       margin: 0;
@@ -54,10 +58,10 @@ body {
       animation: typewriter .1s steps(40) 6.1s 1 normal both;
 }
 .anim-typewriter12 {
-      animation: typewriter 2s steps(40) 6.2s 1 normal both;
+      animation: typewriter 1s steps(40) 6.4s 1 normal both;
 }
 .anim-typewriter13 {
-      animation: typewriter 3s steps(40) 8.95s 1 normal both;
+      animation: typewriter 1.5s steps(40) 7.95s 1 normal both;
 }
 
 @keyframes typewriter {
