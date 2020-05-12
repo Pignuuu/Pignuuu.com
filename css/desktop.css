@@ -22,11 +22,11 @@ a:link {
     text-decoration: none;
 }
 
-#content {
+.windows-button-panel {
     display: none;
 }
 
-#content img {
+.windows-button-panel img {
     position: absolute;
     bottom: 35px;
     left: 5px;
@@ -86,7 +86,7 @@ a:link {
     background-color: rgb(240, 240, 240);
     overflow: hidden;
     position: fixed;
-    bottom: 0;
+    bottom: 0;  
     height: 37px;
     width: 100%;
 }
