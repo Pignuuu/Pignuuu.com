@@ -3,7 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/desktop.css">
     <link rel="stylesheet" href="/css/import.css">
     <link rel="stylesheet" href="/css/mediaqueries.css">
     <meta charset="UTF-8">
@@ -60,15 +60,15 @@
                     </a>
                 </div>
                 <div style="display: flex;">
-                <a class="icon-div icon-text-white padding-top-7px" onclick="popUpUses()">
-                    <img src="/img/icons/Notepad.png" alt="Notepad icon">
-                    <h3>Uses</h3>
-                </a>
-                <a class="icon-div icon-text-white padding-top-7px" onclick="popUpDiscord()">
-                    <img src="/img/icons/Discord.png" alt="Discord icon">
-                    <h3>Discord</h3>
-                </a>
-            </div>
+                    <a class="icon-div icon-text-white padding-top-7px" onclick="popUpUses()">
+                        <img src="/img/icons/Notepad.png" alt="Notepad icon">
+                        <h3>Uses</h3>
+                    </a>
+                    <a class="icon-div icon-text-white padding-top-7px" onclick="popUpDiscord()">
+                        <img src="/img/icons/Discord.png" title="Join my discord server" alt="Discord icon">
+                        <h3>Discord</h3>
+                    </a>
+                </div>
                 <div>
                     <a class="icon-div icon-text-white padding-top-7px" onclick="popUpSocials()">
                         <img src="/img/icons/Notepad.png" alt="Notepad icon">
@@ -77,18 +77,20 @@
                 </div>
                 <div>
                     <a class="icon-div icon-text-white padding-top-7px" href="mailto: Pignuuu@gmail.com">
-                        <img src="/img/icons/Mail-icon.png" title="Get in contact with me Pignuuu@gmail.com" alt="Email icon">
+                        <img src="/img/icons/Mail-icon.png" title="Get in contact with me Pignuuu@gmail.com"
+                            alt="Email icon">
                         <h3>Email</h3>
                     </a>
                 </div>
-                <div id="content" class="windows-button-panel"><img src="/img/Win-button-menu.png" alt="Windows button"></div>
+                <div id="content" class="windows-button-panel"><img src="/img/Win-button-menu.png" alt="Windows button">
+                </div>
             </div>
         </div>
         <div onclick="closeWinmenu()" class="white-line"></div>
         <div class="toolbar toolbar-flex">
-            <span onclick="winButton()"><img src="/img/Toolbar/Toolbar-start-menu.png" alt="toolbar menu button"></span>
-            <span onclick="popUpBruh()" onclick="popUpBruh2()" class="clock-outside"> <span class="clock-img-outside">  <img class="clock-img"
-                        src="/img/Toolbar/clock.png" alt="toolbar clock" /></span>
+            <span onclick="winButton()"><span class="winmenu-button"><img src="/img/Toolbar/Toolbar-start-menu.png" alt="toolbar menu button"></span></span>
+            <span onclick="popUpBruh()" onclick="popUpBruh2()" class="clock-outside"> <span class="clock-img-outside">
+                    <img class="clock-img" src="/img/Toolbar/clock.png" alt="toolbar clock" /></span>
                 <h3 class="clock-inside"></h3>
             </span>
         </div>
@@ -145,6 +147,7 @@
             popupWindow = window.open('/uses', 'Uses', 'width=700,height=600');
             popupWindow.focus();
         }
+
         function popUpDiscord() {
             popupWindow = window.open('https://discord.gg/zyWEUbH', 'Discord', 'width=700,height=600');
             popupWindow.focus();
@@ -154,6 +157,7 @@
             popupWindow = window.open('/projects', 'Projects', 'width=700,height=450');
             popupWindow.focus();
         }
+
         function popUpBruh() {
             console.log("test")
             popupWindow = window.open('/img/roll.gif', 'Roll', 'width=250,height=204');
