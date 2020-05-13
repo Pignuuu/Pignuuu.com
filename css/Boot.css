@@ -1,7 +1,7 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap'); 
 
-/* Global */
+/* Change font size, color and background color */
 
 body {
       font-family: 'Press Start 2P', cursive;
@@ -9,10 +9,14 @@ body {
       color: rgba(255, 255, 255, 0.75);
       background-color: #000
 }
+/* Set widht of page */
+
 
 section{
       width: 98%;
 }
+
+/* Change position of text */
 
 .line {
       overflow: hidden;transform: translateY(-50%);

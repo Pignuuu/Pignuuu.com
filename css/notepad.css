@@ -1,8 +1,12 @@
+/* Set background color and disable scrolling */
+
 html {
     background-color: #E8E8E8;
     overflow-y: hidden;
     overflow-x: hidden;
 }
+
+/* Disable selection */
 
 .disable-selection {
     -moz-user-select: none;
@@ -12,6 +16,8 @@ html {
     -webkit-touch-callout: none;
     
 }
+
+/* Change color of selected text */
 
 ::selection {
     background: #0000A8;
@@ -106,7 +112,7 @@ html {
     padding-left: 10px;
 }
 
-/* text */
+/* Text */
 
 .padding-top-35px {
     padding-top: 35px;

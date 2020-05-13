@@ -1,9 +1,15 @@
+/* Import font */
+
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+/* Change background color */
 
 html {
     background-color: #0200AC;
     line-height: 25px;
 }
+
+/* Change text font */
 
 h3 {
     color: rgb(163, 163, 163);
@@ -11,6 +17,8 @@ h3 {
     font-size: 10px;
     padding-left: 45px;
 }
+
+/* Change lik color */
 
 a {
     color: rgb(163, 163, 163);
