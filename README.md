@@ -1,6 +1,6 @@
 # Pignuuu
 
-This website mainly used as a landing page.
+This website was mainly used as a landing page.
 
 ---
 
